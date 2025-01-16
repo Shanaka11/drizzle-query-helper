@@ -1,8 +1,11 @@
 /src
 /node_modules
+/.github
 
 .DS_Store
-tscongig.json
+tsconfig.json
 tsup.config.ts
 .prettierignore
-.prettier.config.cjs
+prettier.config.cjs
+CHANGELOG.md
+README.md
