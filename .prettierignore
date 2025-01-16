@@ -1,0 +1,11 @@
+/node_modules
+
+.github
+
+.DS_Store
+
+
+/dist
+package-lock.json
+
+*.md

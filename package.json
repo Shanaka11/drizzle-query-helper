@@ -6,7 +6,9 @@
 	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",
 	"scripts": {
-		"build": "tsup"
+		"build": "tsup",
+		"format:check": "prettier --check . ",
+		"format": "prettier --write . --list-different"
 	},
 	"repository": {
 		"type": "git",
@@ -24,6 +26,8 @@
 	},
 	"homepage": "https://github.com/Shanaka11/drizzle-query-helper#readme",
 	"devDependencies": {
+		"@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+		"prettier": "^3.4.2",
 		"tsup": "^8.3.5",
 		"typescript": "^5.7.3"
 	},
