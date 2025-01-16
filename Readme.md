@@ -49,7 +49,7 @@ The following features and improvements are planned:
 ## Installation
 
 ```bash
-npm install dynamic-query-filters
+npm install drizzle-query-helper
 ```
 
 ## Contributions

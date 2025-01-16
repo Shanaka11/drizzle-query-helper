@@ -1,4 +1,4 @@
-import { and, AnyTable, or, SQL } from "drizzle-orm";
+import { and, AnyTable, eq, or, SQL } from "drizzle-orm";
 
 export const executefunction = (
   table: AnyTable<any>,
