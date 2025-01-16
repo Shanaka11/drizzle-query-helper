@@ -1,0 +1,6 @@
+/src
+/node_modules
+
+.DS_Store
+tscongig.json
+tsup.config.ts
