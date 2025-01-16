@@ -1,0 +1,33 @@
+{
+	"name": "drizzle-query-helper",
+	"version": "0.0.1",
+	"description": "A lightweight collection of tools to help quering data using drizzle orm",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"build": "tsup"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Shanaka11/drizzle-query-helper.git"
+	},
+	"keywords": [
+		"drizzle",
+		"drizzle-orm",
+		"dynamic query filtering"
+	],
+	"author": "Shanaka11",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Shanaka11/drizzle-query-helper/issues"
+	},
+	"homepage": "https://github.com/Shanaka11/drizzle-query-helper#readme",
+	"devDependencies": {
+		"tsup": "^8.3.5",
+		"typescript": "^5.7.3"
+	},
+	"dependencies": {
+		"drizzle-orm": "^0.38.3"
+	}
+}
