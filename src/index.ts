@@ -1,1 +1,1 @@
-export * from './core/decoder';
+export * from "./core/decoder";
