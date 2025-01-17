@@ -18,7 +18,7 @@ jobs:
           id: release
           with:
             release-type: simple
-            token: ${{ secrets.secrets.NPM_TOKEN }}      
+            token: ${{ secrets.NPM_TOKEN }}      
         - uses: actions/checkout@v2
         - name: tag major and minor versions
           if: ${{ steps.release.outputs.release_created }}
