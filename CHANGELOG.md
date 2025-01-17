@@ -1,5 +1,51 @@
 # Changelog
 
+## [1.0.3](https://github.com/Shanaka11/drizzle-query-helper/compare/v1.0.2...v1.0.3) (2025-01-17)
+
+
+### Bug Fixes
+
+* ci/cd fixes ([#6](https://github.com/Shanaka11/drizzle-query-helper/issues/6)) ([085c786](https://github.com/Shanaka11/drizzle-query-helper/commit/085c786da8160816cb89de158620a9fddffd8308))
+* **CI/CD:** Changes to release please ([#13](https://github.com/Shanaka11/drizzle-query-helper/issues/13)) ([d71685f](https://github.com/Shanaka11/drizzle-query-helper/commit/d71685f20a1d3f10306a8ba4a9b19e5a60b61543))
+* **CI/CD:** Configured CI/CD Pipelines to automate the tests and deployments ([#1](https://github.com/Shanaka11/drizzle-query-helper/issues/1)) ([ba7f043](https://github.com/Shanaka11/drizzle-query-helper/commit/ba7f043bafd962af15fa581715957aac71f36295))
+* **CI/CD:** Release please changes ([#11](https://github.com/Shanaka11/drizzle-query-helper/issues/11)) ([a88a3da](https://github.com/Shanaka11/drizzle-query-helper/commit/a88a3daaf53e9ce7e099e203ecfa464a25fc00c4))
+* **CI/CD:** Release please fix ([#16](https://github.com/Shanaka11/drizzle-query-helper/issues/16)) ([3185e3a](https://github.com/Shanaka11/drizzle-query-helper/commit/3185e3a06f9771e53ce5ef8909fa3601220961e2))
+* Fixed eq function issues ([#4](https://github.com/Shanaka11/drizzle-query-helper/issues/4)) ([b6f2d00](https://github.com/Shanaka11/drizzle-query-helper/commit/b6f2d00bb6cbbdfbdab611956f57e4cd7ece2335))
+
+## [1.0.2](https://github.com/Shanaka11/drizzle-query-helper/compare/v1.0.1...v1.0.2) (2025-01-17)
+
+
+### Bug Fixes
+
+* ci/cd fixes ([#6](https://github.com/Shanaka11/drizzle-query-helper/issues/6)) ([085c786](https://github.com/Shanaka11/drizzle-query-helper/commit/085c786da8160816cb89de158620a9fddffd8308))
+* **CI/CD:** Changes to release please ([#13](https://github.com/Shanaka11/drizzle-query-helper/issues/13)) ([d71685f](https://github.com/Shanaka11/drizzle-query-helper/commit/d71685f20a1d3f10306a8ba4a9b19e5a60b61543))
+* **CI/CD:** Configured CI/CD Pipelines to automate the tests and deployments ([#1](https://github.com/Shanaka11/drizzle-query-helper/issues/1)) ([ba7f043](https://github.com/Shanaka11/drizzle-query-helper/commit/ba7f043bafd962af15fa581715957aac71f36295))
+* **CI/CD:** Release please changes ([#11](https://github.com/Shanaka11/drizzle-query-helper/issues/11)) ([a88a3da](https://github.com/Shanaka11/drizzle-query-helper/commit/a88a3daaf53e9ce7e099e203ecfa464a25fc00c4))
+* **CI/CD:** Release please fix ([#16](https://github.com/Shanaka11/drizzle-query-helper/issues/16)) ([3185e3a](https://github.com/Shanaka11/drizzle-query-helper/commit/3185e3a06f9771e53ce5ef8909fa3601220961e2))
+* Fixed eq function issues ([#4](https://github.com/Shanaka11/drizzle-query-helper/issues/4)) ([b6f2d00](https://github.com/Shanaka11/drizzle-query-helper/commit/b6f2d00bb6cbbdfbdab611956f57e4cd7ece2335))
+
+## [1.0.1](https://github.com/Shanaka11/drizzle-query-helper/compare/v1.0.0...v1.0.1) (2025-01-17)
+
+
+### Bug Fixes
+
+* ci/cd fixes ([#6](https://github.com/Shanaka11/drizzle-query-helper/issues/6)) ([085c786](https://github.com/Shanaka11/drizzle-query-helper/commit/085c786da8160816cb89de158620a9fddffd8308))
+* **CI/CD:** Changes to release please ([#13](https://github.com/Shanaka11/drizzle-query-helper/issues/13)) ([d71685f](https://github.com/Shanaka11/drizzle-query-helper/commit/d71685f20a1d3f10306a8ba4a9b19e5a60b61543))
+* **CI/CD:** Configured CI/CD Pipelines to automate the tests and deployments ([#1](https://github.com/Shanaka11/drizzle-query-helper/issues/1)) ([ba7f043](https://github.com/Shanaka11/drizzle-query-helper/commit/ba7f043bafd962af15fa581715957aac71f36295))
+* **CI/CD:** Release please changes ([#11](https://github.com/Shanaka11/drizzle-query-helper/issues/11)) ([a88a3da](https://github.com/Shanaka11/drizzle-query-helper/commit/a88a3daaf53e9ce7e099e203ecfa464a25fc00c4))
+* Fixed eq function issues ([#4](https://github.com/Shanaka11/drizzle-query-helper/issues/4)) ([b6f2d00](https://github.com/Shanaka11/drizzle-query-helper/commit/b6f2d00bb6cbbdfbdab611956f57e4cd7ece2335))
+
+## 1.0.0 (2025-01-17)
+
+
+### Bug Fixes
+
+* ci/cd fixes ([#6](https://github.com/Shanaka11/drizzle-query-helper/issues/6)) ([085c786](https://github.com/Shanaka11/drizzle-query-helper/commit/085c786da8160816cb89de158620a9fddffd8308))
+* **CI/CD:** Changes to release please ([#13](https://github.com/Shanaka11/drizzle-query-helper/issues/13)) ([d71685f](https://github.com/Shanaka11/drizzle-query-helper/commit/d71685f20a1d3f10306a8ba4a9b19e5a60b61543))
+* **CI/CD:** Configured CI/CD Pipelines to automate the tests and deployments ([#1](https://github.com/Shanaka11/drizzle-query-helper/issues/1)) ([ba7f043](https://github.com/Shanaka11/drizzle-query-helper/commit/ba7f043bafd962af15fa581715957aac71f36295))
+* **CI/CD:** Release please changes ([#11](https://github.com/Shanaka11/drizzle-query-helper/issues/11)) ([a88a3da](https://github.com/Shanaka11/drizzle-query-helper/commit/a88a3daaf53e9ce7e099e203ecfa464a25fc00c4))
+* Fixed eq function issues ([#4](https://github.com/Shanaka11/drizzle-query-helper/issues/4)) ([b6f2d00](https://github.com/Shanaka11/drizzle-query-helper/commit/b6f2d00bb6cbbdfbdab611956f57e4cd7ece2335))
+
 ## 1.0.0 (2025-01-16)
 
 
