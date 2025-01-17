@@ -1,4 +1,4 @@
-import { and, AnyTable, eq, or, SQL, ne } from "drizzle-orm";
+import { and, AnyTable, eq, ne, or, SQL } from "drizzle-orm";
 
 export const executefunction = (
   table: AnyTable<any>,
@@ -21,7 +21,7 @@ export const executefunction = (
     //@ts-ignore
     return eq(table[args[0]], args[1]);
   }
-  if (functionName === "neq"){
+  if (functionName === "neq") {
     //@ts-ignore
     return ne(table[args[0]], args[1]);
   }
