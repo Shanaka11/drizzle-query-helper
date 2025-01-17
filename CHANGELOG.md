@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/Shanaka11/drizzle-query-helper/compare/v1.0.4...v1.1.0) (2025-01-17)
+
+
+### Features
+
+* Added not equal operator ([#22](https://github.com/Shanaka11/drizzle-query-helper/issues/22)) ([66e6d0c](https://github.com/Shanaka11/drizzle-query-helper/commit/66e6d0cbc21ae89040a5b16a2bb70f7a8048dd8d))
+
 ## [1.0.4](https://github.com/Shanaka11/drizzle-query-helper/compare/v1.0.3...v1.0.4) (2025-01-17)
 
 
