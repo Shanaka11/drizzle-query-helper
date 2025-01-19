@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/Shanaka11/drizzle-query-helper/compare/v1.1.0...v1.2.0) (2025-01-19)
+
+
+### Features
+
+* Added support for all the basic sql operations ([#24](https://github.com/Shanaka11/drizzle-query-helper/issues/24)) ([d0213f1](https://github.com/Shanaka11/drizzle-query-helper/commit/d0213f1d01e040246fce9410e609f295a7b1593f))
+
 ## [1.1.0](https://github.com/Shanaka11/drizzle-query-helper/compare/v1.0.4...v1.1.0) (2025-01-17)
 
 
