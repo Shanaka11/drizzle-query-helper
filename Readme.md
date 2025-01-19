@@ -5,18 +5,21 @@ This lightweight npm package helps create dynamic query filters when querying da
 ## Features
 
 - **AND / OR Filters**: Currently supports `and` and `or` filters.
-- **Equality Operation**: Supports `eq` (equals) operation.
+- **Equality Operation**: Supports `eq` (equals) / `neq` (not equals) operations.
+- **Comparisons**: Supports `lt` (less than) / `lte` (less than or equal) / `gt` (greater than) / `gte` (greater than or equal).
+- **Between**: Supports `between` condition.
+- **Text Compariosns**: Supports `like`/`not like`/`ilike` (compare while ignoring case)
 
 ### Example Usage
 
 ```javascript
-const { generateDrizzleFilter } = require('dynamic-query-filters');
+import { generateDrizzleFilter } from 'drizzle-query-helper';
 
 // Input query string
 const queryString = 'and(eq(firstname,john),eq(lastname,doe))';
 
 // Parse to Drizzle query methods
-const filter = parseFilter(queryString);
+const filter = generateDrizzleFilter(queryString);
 
 // Use the filter in your Drizzle query
 const result = await db.select().from(users).where(filter);
@@ -32,18 +35,42 @@ and(eq(firstname,john),eq(lastname,doe))
 
 It is translated into equivalent Drizzle ORM methods to be used in the `where` clause of your queries. This allows for more dynamic and flexible query construction.
 
+```sql
+SELECT * FROM <TABLE> WHERE FirstName = 'john' AND LastName = 'doe'
+```
+
+## Caveats
+
+Currently, there are a few limitations to be aware of:
+
+1. **No Spaces Allowed**: The filter string cannot contain any spaces. This also means that values cannot have spaces.
+2. **Restricted Characters**: Values cannot include the characters `(`, `)`, or `,`.
+
+These limitations will be addressed in future releases.
+
+## SQL Operations and Example Query Strings
+
+| SQL Operation | Example Query String                                                  |
+| ------------- | --------------------------------------------------------------------- |
+| `=`           | `eq(columnName,value)`                                                |
+| `>`           | `gt(columnName,value)`                                                |
+| `<`           | `lt(columnName,value)`                                                |
+| `>=`          | `gte(columnName,value)`                                               |
+| `<=`          | `lte(columnName,value)`                                               |
+| `<>`          | `neq(columnName,value)`                                               |
+| `like`        | `like(columnName,value)`                                              |
+| `ilike`       | `ilike(columnName,value)`                                             |
+| `not like`    | `nlike(columnName,value)`                                             |
+| `between`     | `between(columnName,value1,value2)`                                   |
+| `and`         | `and(eq(columnName,value),eq(columnName,value),eq(columnName,value))` |
+| `or`          | `or(eq(columnName,value),eq(columnName,value),eq(columnName,value))`  |
+
 ## Future Plans
 
 The following features and improvements are planned:
 
 1. **Add Tests**: Ensure 100% test coverage for the package.
-2. **Support Additional SQL Operations**: Include operations such as:
-   - `include`
-   - `not include`
-   - `greater than`
-   - `less than`
-   - And the rest of the SQL filters provided by Drizzle ORM.
-3. **Dynamic Query Builders**:
+2. **Dynamic Query Builders**:
    - Add support for dynamically creating `order by` and `group by` clauses.
 
 ## Installation
