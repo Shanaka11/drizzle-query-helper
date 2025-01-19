@@ -42,8 +42,6 @@ const decode = (table: AnyTable<any>, filterText: string) => {
               );
             }
           }
-          console.log(i);
-          console.log(stack);
         }
       }
       if (
