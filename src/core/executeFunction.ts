@@ -1,4 +1,18 @@
-import { and, AnyTable, between, eq, gt, gte, ilike, like, lt, ne, notLike, or, SQL } from "drizzle-orm";
+import {
+  and,
+  AnyTable,
+  between,
+  eq,
+  gt,
+  gte,
+  ilike,
+  like,
+  lt,
+  ne,
+  notLike,
+  or,
+  SQL,
+} from "drizzle-orm";
 
 export const executefunction = (
   table: AnyTable<any>,
@@ -25,36 +39,36 @@ export const executefunction = (
     //@ts-ignore
     return ne(table[args[0]], args[1]);
   }
-  if(functionName === "gt") {
+  if (functionName === "gt") {
     //@ts-ignore
     return gt(table[args[0]], args[1]);
   }
-  if(functionName === "lt") {
+  if (functionName === "lt") {
     //@ts-ignore
     return lt(table[args[0]], args[1]);
   }
-  if(functionName === "gte") {
+  if (functionName === "gte") {
     //@ts-ignore
     return gte(table[args[0]], args[1]);
   }
-  if(functionName === "lte") {
+  if (functionName === "lte") {
     //@ts-ignore
     return lte(table[args[0]], args[1]);
   }
-  if(functionName === "like") {
+  if (functionName === "like") {
     //@ts-ignore
     return like(table[args[0]], args[1]);
   }
-  if(functionName === "ilike") {
+  if (functionName === "ilike") {
     //@ts-ignore
     return ilike(table[args[0]], args[1]);
   }
-  if(functionName === "nlike") {
+  if (functionName === "nlike") {
     //@ts-ignore
     return notLike(table[args[0]], args[1]);
   }
 
-  if(functionName === "between") {
+  if (functionName === "between") {
     //@ts-ignore
     return between(table[args[0]], args[1], args[2]);
   }
