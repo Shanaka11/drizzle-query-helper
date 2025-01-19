@@ -33,9 +33,9 @@ jobs:
           node-version: 12
           registry-url: 'https://registry.npmjs.org'
         if: ${{ steps.release.outputs.release_created }}
-      - run: npm i
+      - run: npm install
         if: ${{ steps.release.outputs.release_created }}
-      - run: npm run build      
+      - run: npm run build  
         if: ${{ steps.release.outputs.release_created }}
       - run: npm publish
         env:
