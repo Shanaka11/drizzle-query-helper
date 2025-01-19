@@ -9,3 +9,4 @@ tsup.config.ts
 prettier.config.cjs
 CHANGELOG.md
 README.md
+pnpm-lock.yaml
