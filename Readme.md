@@ -69,8 +69,7 @@ These limitations will be addressed in future releases.
 
 The following features and improvements are planned:
 
-1. **Add Tests**: Ensure 100% test coverage for the package.
-2. **Dynamic Query Builders**:
+1. **Dynamic Query Builders**:
    - Add support for dynamically creating `order by` and `group by` clauses.
 
 ## Installation
