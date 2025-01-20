@@ -1,6 +1,7 @@
 /src
 /node_modules
 /.github
+/test
 
 .DS_Store
 tsconfig.json
