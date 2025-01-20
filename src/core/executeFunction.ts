@@ -8,6 +8,7 @@ import {
   ilike,
   like,
   lt,
+  lte,
   ne,
   notLike,
   or,
@@ -39,21 +40,22 @@ export const executefunction = (
     //@ts-ignore
     return ne(table[args[0]], args[1]);
   }
+  // TODO: Handle string and number comparison, for now we consider all less than and greater than as number
   if (functionName === "gt") {
     //@ts-ignore
-    return gt(table[args[0]], args[1]);
+    return gt(table[args[0]], Number(args[1]));
   }
   if (functionName === "lt") {
     //@ts-ignore
-    return lt(table[args[0]], args[1]);
+    return lt(table[args[0]], Number(args[1]));
   }
   if (functionName === "gte") {
     //@ts-ignore
-    return gte(table[args[0]], args[1]);
+    return gte(table[args[0]], Number(args[1]));
   }
   if (functionName === "lte") {
     //@ts-ignore
-    return lte(table[args[0]], args[1]);
+    return lte(table[args[0]], Number(args[1]));
   }
   if (functionName === "like") {
     //@ts-ignore
