@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.4](https://github.com/Shanaka11/drizzle-query-helper/compare/v1.2.3...v1.2.4) (2025-01-20)
+
+
+### Bug Fixes
+
+* Added unit tests ([#34](https://github.com/Shanaka11/drizzle-query-helper/issues/34)) ([b867cba](https://github.com/Shanaka11/drizzle-query-helper/commit/b867cbaa946aeaf422debee422f4b73b4408bb3d))
+
 ## [1.2.3](https://github.com/Shanaka11/drizzle-query-helper/compare/v1.2.2...v1.2.3) (2025-01-19)
 
 
