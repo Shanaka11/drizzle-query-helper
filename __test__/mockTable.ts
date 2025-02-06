@@ -1,3 +1,4 @@
+import { integer, pgTable, varchar } from "drizzle-orm/pg-core";
 import { AnySQLiteColumn, sqliteTable } from "drizzle-orm/sqlite-core";
 import * as t from "drizzle-orm/sqlite-core";
 
@@ -16,3 +17,10 @@ export const users = sqliteTable(
     return [t.uniqueIndex("email_idx").on(table.email)];
   },
 );
+
+export const usersPg = pgTable("usersPg", {
+  id: integer("id").primaryKey().generatedAlwaysAsIdentity(),
+  name: varchar("name", { length: 20 }).notNull(),
+  description: varchar("description", { length: 100 }),
+  icon: varchar("icon", { length: 15 }),
+});
