@@ -13,8 +13,8 @@ import {
 } from "drizzle-orm";
 import { expect, test } from "vitest";
 
-import { generateDrizzleFilter } from "../src";
-import { users } from "./mockTable";
+import { generateDrizzleFilter, generateDrizzleFilterPg } from "../src";
+import { users, usersPg } from "./mockTable";
 
 test("Check Equal", async () => {
   const filterString = "eq(firstName,jhone)";
@@ -84,4 +84,10 @@ test("Check OR", async () => {
   expect(drizzleFilter).toStrictEqual(
     or(eq(users.firstName, "jhone"), eq(users.lastName, "doe")),
   );
+});
+
+test("Check PG", async () => {
+  const filterString = "eq(icon,jhone)";
+  const drizzleFilter = generateDrizzleFilterPg(usersPg, filterString);
+  expect(drizzleFilter).toStrictEqual(eq(usersPg.icon, "jhone"));
 });

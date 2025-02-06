@@ -1,4 +1,5 @@
 import { AnyTable } from "drizzle-orm";
+import { PgTable } from "drizzle-orm/pg-core";
 
 import { executefunction } from "./executeFunction";
 
@@ -67,5 +68,9 @@ export const generateDrizzleFilter = (
   table: AnyTable<any>,
   filterText: string,
 ) => {
+  return decode(table, filterText);
+};
+
+export const generateDrizzleFilterPg = (table: PgTable, filterText: string) => {
   return decode(table, filterText);
 };
