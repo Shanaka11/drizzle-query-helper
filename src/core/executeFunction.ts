@@ -36,7 +36,7 @@ export const executefunction = (
   if (functionName === "eq") {
     // For booleans
     if (table[args[0]].dataType === "boolean") {
-      return eq(table[0], args[1] === "true" ? true : false);
+      return eq(table[args[0]], args[1] === "true" ? true : false);
     }
     //@ts-ignore
     return eq(table[args[0]], args[1]);
@@ -44,7 +44,7 @@ export const executefunction = (
   if (functionName === "neq") {
     // For booleans
     if (table[args[0]].dataType === "boolean") {
-      return ne(table[0], args[1] === "true" ? true : false);
+      return ne(table[args[0]], args[1] === "true" ? true : false);
     }
     //@ts-ignore
     return ne(table[args[0]], args[1]);
