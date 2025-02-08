@@ -90,4 +90,9 @@ test("Check PG", async () => {
   const filterString = "eq(icon,jhone)";
   const drizzleFilter = generateDrizzleFilterPg(usersPg, filterString);
   expect(drizzleFilter).toStrictEqual(eq(usersPg.icon, "jhone"));
+
+  const newDate = new Date();
+  const filterString3 = "eq(icon,jhone)";
+  const drizzleFilter3 = generateDrizzleFilter(usersPg, filterString3);
+  expect(drizzleFilter3).toStrictEqual(eq(usersPg.dob, newDate));
 });
