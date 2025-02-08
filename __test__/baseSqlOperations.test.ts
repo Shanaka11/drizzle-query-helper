@@ -88,6 +88,10 @@ test("Check OR", async () => {
 
 test("Check PG", async () => {
   const filterString = "eq(icon,jhone)";
-  const drizzleFilter = generateDrizzleFilterPg(usersPg, filterString);
+  const drizzleFilter = generateDrizzleFilter(usersPg, filterString);
   expect(drizzleFilter).toStrictEqual(eq(usersPg.icon, "jhone"));
+
+  const filterString2 = "eq(admin,true)";
+  const drizzleFilter2 = generateDrizzleFilter(usersPg, filterString2);
+  expect(drizzleFilter2).toStrictEqual(eq(usersPg.admin, true));
 });
