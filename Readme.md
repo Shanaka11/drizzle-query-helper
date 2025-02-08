@@ -45,6 +45,7 @@ Currently, there are a few limitations to be aware of:
 
 1. **No Spaces Allowed**: The filter string cannot contain any spaces. This also means that values cannot have spaces.
 2. **Restricted Characters**: Values cannot include the characters `(`, `)`, or `,`.
+3. **Boolean Comparisons**: When comparing booleans use `eq(columnName,true)` or `eq(columnName,false)` as the query string
 
 These limitations will be addressed in future releases.
 
@@ -65,12 +66,14 @@ These limitations will be addressed in future releases.
 | `and`         | `and(eq(columnName,value),eq(columnName,value),eq(columnName,value))` |
 | `or`          | `or(eq(columnName,value),eq(columnName,value),eq(columnName,value))`  |
 
+
 ## Future Plans
 
 The following features and improvements are planned:
 
 1. **Dynamic Query Builders**:
    - Add support for dynamically creating `order by` and `group by` clauses.
+   - Add support for Date, Timezone comparisons
 
 ## Installation
 
