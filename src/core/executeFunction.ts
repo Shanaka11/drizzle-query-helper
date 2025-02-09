@@ -40,7 +40,7 @@ export const executefunction = (
     }
     // For booleans
     if (table[args[0]].dataType === "boolean") {
-      return eq(table[0], args[1] === "true" ? true : false);
+      return eq(table[args[0]], args[1] === "true" ? true : false);
     }
     // For numbers
     if (table[args[0]].dataType === "number") {
@@ -56,7 +56,7 @@ export const executefunction = (
     }
     // For booleans
     if (table[args[0]].dataType === "boolean") {
-      return ne(table[0], args[1] === "true" ? true : false);
+      return ne(table[args[0]], args[1] === "true" ? true : false);
     }
     // For numbers
     if (table[args[0]].dataType === "number") {
