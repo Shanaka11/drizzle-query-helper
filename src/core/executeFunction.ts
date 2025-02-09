@@ -36,7 +36,7 @@ export const executefunction = (
   if (functionName === "eq") {
     // For date
     if (table[args[0]].dataType === "date") {
-      return eq(table[args[0]], new Date(decodeURIComponent(args[1])));
+      return eq(table[args[0]], new Date(args[1]));
     }
     // For booleans
     if (table[args[0]].dataType === "boolean") {
@@ -52,7 +52,7 @@ export const executefunction = (
   if (functionName === "neq") {
     // For date
     if (table[args[0]].dataType === "date") {
-      return ne(table[args[0]], new Date(decodeURIComponent(args[1])));
+      return ne(table[args[0]], new Date(args[1]));
     }
     // For booleans
     if (table[args[0]].dataType === "boolean") {
@@ -69,7 +69,7 @@ export const executefunction = (
   if (functionName === "gt") {
     // For date
     if (table[args[0]].dataType === "date") {
-      return gt(table[args[0]], new Date(decodeURIComponent(args[1])));
+      return gt(table[args[0]], new Date(args[1]));
     }
     //@ts-ignore
     // For numbers
@@ -81,7 +81,7 @@ export const executefunction = (
   if (functionName === "lt") {
     // For date
     if (table[args[0]].dataType === "date") {
-      return lt(table[args[0]], new Date(decodeURIComponent(args[1])));
+      return lt(table[args[0]], new Date(args[1]));
     }
     //@ts-ignore
     // For numbers
@@ -93,7 +93,7 @@ export const executefunction = (
   if (functionName === "gte") {
     // For date
     if (table[args[0]].dataType === "date") {
-      return gte(table[args[0]], new Date(decodeURIComponent(args[1])));
+      return gte(table[args[0]], new Date(args[1]));
     }
     //@ts-ignore
     // For numbers
@@ -105,7 +105,7 @@ export const executefunction = (
   if (functionName === "lte") {
     // For date
     if (table[args[0]].dataType === "date") {
-      return lte(table[args[0]], new Date(decodeURIComponent(args[1])));
+      return lte(table[args[0]], new Date(args[1]));
     }
     //@ts-ignore
     // For numbers
@@ -130,11 +130,7 @@ export const executefunction = (
   if (functionName === "between") {
     // For date
     if (table[args[0]].dataType === "date") {
-      return between(
-        table[args[0]],
-        new Date(decodeURIComponent(args[1])),
-        new Date(decodeURIComponent(args[2])),
-      );
+      return between(table[args[0]], new Date(args[1]), new Date(args[2]));
     }
     //@ts-ignore
     // For numbers
