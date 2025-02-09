@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/Shanaka11/drizzle-query-helper/compare/v1.3.1...v1.4.0) (2025-02-09)
+
+
+### Features
+
+* Added Date and number comparisons ([#45](https://github.com/Shanaka11/drizzle-query-helper/issues/45)) ([4175f36](https://github.com/Shanaka11/drizzle-query-helper/commit/4175f364f1b49f1a30d99ae6149187f87fe46be6))
+
 ## [1.3.1](https://github.com/Shanaka11/drizzle-query-helper/compare/v1.3.0...v1.3.1) (2025-02-08)
 
 
