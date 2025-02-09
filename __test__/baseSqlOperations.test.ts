@@ -91,6 +91,13 @@ test("Check PG", async () => {
   const drizzleFilter = generateDrizzleFilter(usersPg, filterString);
   expect(drizzleFilter).toStrictEqual(eq(usersPg.icon, "jhone"));
 
+  const newDate = new Date();
+  //newDate.toUTCString()
+  // Try to url encode the date utc string
+  // Wed, 14 Jun 2017 07:00:00 GMT == Wed%2C%2014%20Jun%202017%2007%3A00%3A00%20GMT
+  const filterString3 = `eq(dob,${newDate.toISOString()})`;
+  const drizzleFilter3 = generateDrizzleFilter(usersPg, filterString3);
+  expect(drizzleFilter3).toStrictEqual(eq(usersPg.dob, newDate));
   const filterString2 = "eq(admin,true)";
   const drizzleFilter2 = generateDrizzleFilter(usersPg, filterString2);
   expect(drizzleFilter2).toStrictEqual(eq(usersPg.admin, true));

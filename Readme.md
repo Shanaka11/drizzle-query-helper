@@ -46,6 +46,7 @@ Currently, there are a few limitations to be aware of:
 1. **No Spaces Allowed**: The filter string cannot contain any spaces. This also means that values cannot have spaces.
 2. **Restricted Characters**: Values cannot include the characters `(`, `)`, or `,`.
 3. **Boolean Comparisons**: When comparing booleans use `eq(columnName,true)` or `eq(columnName,false)` as the query string
+4. **Date Comparisons** When comparing dates use the iso string of the date. For example `eq(columnName,1991-02-07T22%3A25%3A13.382Z")`
 
 These limitations will be addressed in future releases.
 

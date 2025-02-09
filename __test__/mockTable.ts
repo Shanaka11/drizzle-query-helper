@@ -1,4 +1,10 @@
-import { boolean, integer, pgTable, varchar } from "drizzle-orm/pg-core";
+import {
+  boolean,
+  integer,
+  pgTable,
+  timestamp,
+  varchar,
+} from "drizzle-orm/pg-core";
 import { AnySQLiteColumn, sqliteTable } from "drizzle-orm/sqlite-core";
 import * as t from "drizzle-orm/sqlite-core";
 
@@ -23,5 +29,6 @@ export const usersPg = pgTable("usersPg", {
   name: varchar("name", { length: 20 }).notNull(),
   description: varchar("description", { length: 100 }),
   icon: varchar("icon", { length: 15 }),
+  dob: timestamp("dob"),
   admin: boolean("admin").default(false),
 });
